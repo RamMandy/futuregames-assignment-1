@@ -20,15 +20,31 @@
 
     <main>
         <h2>Contact</h2>
-        <form action="mailto:mandira.ramasinghe98@gmail.com" method="post" enctype="text/plain">
+    
+        <img class="page-image"
+             src="images/contact.jpg"
+             alt="Software quality assurance and communication">
+
+        <form class="contact-form"
+              action="mailto:mandira.ramasinghe98@gmail.com"
+              method="post"
+              enctype="text/plain">
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" required>
+
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" name="subject">
 
             <label for="message">Message:</label>
             <textarea id="message" name="message" required></textarea>
 
             <button type="submit">Send Message</button>
-         </form>
+
+        </form>
     </main>
 
     <footer>
