@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Software Testing Guide | Contact</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/contact.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Software Testing Guide</h1>
+
+        <nav class="nav">
+            <a class="nav__link" href="../index.html">Home</a>
+            <a class="nav__link" href="testing.html">Testing Types</a>
+            <a class="nav__link nav__link--active" href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+
+    <main>
+
+        <h2>Contact</h2>
+
+        <div class="contact-container">
+
+            <section class="contact-visual">
+
+                <div class="contact-visual__content">
+
+                    <h2>Let's Talk About Software Quality</h2>
+
+                    <p>
+                        Have a question about software testing?
+                        Send a question, feedback, or suggestion.
+                    </p>
+
+                </div>
+
+            </section>
+
+
+            <form
+                class="contact-form"
+                action="mailto:mandira.ramasinghe98@gmail.com"
+                method="post"
+                enctype="text/plain">
+
+                <label for="name">Name:</label>
+                <input
+                    type="text"
+                    id="name"
+                    name="name">
+
+
+                <label for="email">Email:</label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    required>
+
+
+                <label for="subject">Subject:</label>
+                <input
+                    type="text"
+                    id="subject"
+                    name="subject">
+
+
+                <label for="topic">Testing Topic:</label>
+
+                <select id="topic" name="topic">
+
+                    <option value="">Choose a topic</option>
+                    <option value="manual-testing">Manual Testing</option>
+                    <option value="automation-testing">Automation Testing</option>
+                    <option value="api-testing">API Testing</option>
+                    <option value="regression-testing">Regression Testing</option>
+                    <option value="other">Other</option>
+
+                </select>
+
+
+                <fieldset class="message-type">
+
+                    <legend>Message Type:</legend>
+
+                    <div class="radio-option">
+                        <input
+                            type="radio"
+                            id="question"
+                            name="message-type"
+                            value="question"
+                            checked>
+
+                        <label for="question">Question</label>
+                    </div>
+
+                    <div class="radio-option">
+                        <input
+                            type="radio"
+                            id="feedback"
+                            name="message-type"
+                            value="feedback">
+
+                        <label for="feedback">Feedback</label>
+                    </div>
+
+                    <div class="radio-option">
+                        <input
+                            type="radio"
+                            id="suggestion"
+                            name="message-type"
+                            value="suggestion">
+
+                        <label for="suggestion">Suggestion</label>
+                    </div>
+
+                </fieldset>
+
+
+                <label for="message">Message:</label>
+
+                <textarea
+                    id="message"
+                    name="message"
+                    maxlength="500"
+                    required></textarea>
+
+
+                <button type="submit">
+                    Send Message
+                </button>
+
+            </form>
+
+        </div>
+
+    </main>
+
+
+    <footer>
+        <p>&copy; 2026 Mandira</p>
+    </footer>
+
+</body>
+
+</html>
