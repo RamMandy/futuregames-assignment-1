@@ -1,12 +1,10 @@
 .home-page {
     min-height: 100vh;
-
     background-image: url("../images/software-testing.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-
     color: #ffffff;
 }
 
@@ -15,6 +13,9 @@
 }
 
 .home-page main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
@@ -23,14 +24,11 @@
 
 .hero {
     min-height: 200px;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
     padding: 30px 20px;
-
     text-align: center;
     color: #ffffff;
     background-color: transparent;
@@ -51,20 +49,26 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
     padding: 10px 20px 50px;
-
     background-color: transparent;
 }
 
 .qa-showcase__card {
-    width: 60%;
-    max-width: 680px;
-
-    background-color: rgba(255, 255, 255, 0.88);
+    display: grid;
+    grid-template-columns: 40% 60%;
+    width: 75%;
+    max-width: 850px;
+    background-color: rgba(255, 255, 255, 0.9);
     border-radius: 12px;
-
+    overflow: hidden;
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+}
+
+.qa-showcase__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
 
 .qa-showcase__info {
@@ -88,13 +92,10 @@
 .featured-link {
     display: inline-block;
     width: fit-content;
-
     margin-top: 25px;
     padding: 10px 16px;
-
     background-color: #2563eb;
     color: #ffffff;
-
     text-decoration: none;
     font-weight: 600;
     border-radius: 5px;
@@ -126,7 +127,14 @@
     }
 
     .qa-showcase__card {
+        grid-template-columns: 1fr;
         width: 100%;
+    }
+
+    .qa-showcase__image {
+        width: 100%;
+        height: 220px;
+        object-fit: cover;
     }
 
     .qa-showcase__info {
@@ -148,6 +156,10 @@
 
     .hero {
         min-height: 250px;
+    }
+
+    .qa-showcase__image {
+        height: 200px;
     }
 
     .qa-showcase__info {
